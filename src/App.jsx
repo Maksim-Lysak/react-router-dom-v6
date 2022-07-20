@@ -1,17 +1,19 @@
 import React from 'react';
-import { About } from './pages/About';
-import { Home } from './pages/Home';
-import { Blog } from './pages/Blog';
-import { SinglePage } from './pages/SinglePage';
-import { CreatePost } from './pages/CreatePost';
-import { EditPost } from './pages/EditPost';
-import { NotFound } from './pages/NotFound';
-import { LoginPage } from './pages/LoginPage';
+import {
+	Home,
+	Blog,
+	About,
+	EditPost,
+	NotFound,
+	LoginPage,
+	SinglePage,
+	CreatePost
+} from './pages/';
+
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
 
-import { RequireAuth } from './hoc/RequireAuth';
-import { AuthProvider } from './hoc/AuthProvider';
+import { RequireAuth, AuthProvider } from './hoc/';
 
 export const App = () => {
 	return (
