@@ -12,11 +12,6 @@ main {
 padding: 0 20px;
 }
 
-a {
-	display: block;
-}
-
-a.active {
+.nav-link.active {
 	background-color: #EA454B;
-
 }

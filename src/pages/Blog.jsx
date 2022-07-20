@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const Blog = () => {
 	const [posts, setPosts] = useState([]);
@@ -10,6 +10,7 @@ export const Blog = () => {
 	}, []);
 	return (
 		<>
+			<Link to='/blog/new'>add new post</Link>
 			<ul>
 				{posts.map((post) => (
 					<Link key={post.id} to={`/blog/${post.id}`}>

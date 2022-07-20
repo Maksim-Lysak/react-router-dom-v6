@@ -11,13 +11,19 @@ export const Layout = () => {
 					</NavLink>
 					<ul className='right'>
 						<li>
-							<NavLink to='/'>home</NavLink>
+							<NavLink to='/' className='nav-link'>
+								home
+							</NavLink>
 						</li>
 						<li>
-							<NavLink to='blog'>blog</NavLink>
+							<NavLink to='blog' className='nav-link'>
+								blog
+							</NavLink>
 						</li>
 						<li>
-							<NavLink to='about'>about</NavLink>
+							<NavLink to='about' className='nav-link'>
+								about
+							</NavLink>
 						</li>
 					</ul>
 				</nav>
