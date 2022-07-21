@@ -33,7 +33,10 @@ export const App = () => {
 								</RequireAuth>
 							}
 						/>
-						<Route path='about' element={<About />} />
+						<Route path='about' element={<About />}>
+							<Route path='contacts' element={<p>our contact</p>} />
+							<Route path='team' element={<p>our team</p>} />
+						</Route>
 						<Route path='login' element={<LoginPage />} />
 						{/* переадресация без сохранения истории */}
 						<Route path='about-us' element={<Navigate to='/about' replace />} />
